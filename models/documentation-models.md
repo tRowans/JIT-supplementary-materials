@@ -15,7 +15,7 @@ Viewing models will be easiest if you have a mouse with a clickable scroll wheel
 
 ## Map of Models File
 
-![Figure 1](https://github.com/tRowans/JITdecoding/blob/master/documentation/map.jpg)
+![Figure 1](https://github.com/tRowans/JIT-supplementary-materials/blob/main/models/map.jpg)
 
 - A: Overlap of distance 3 slices in all three codes in the qubits-on-faces, qubits-on-edges and qubits-on-vertices pictures. 
 - B: A distance 3 slice through the red code in the qubits-on-faces, qubits-on-edges and qubits-on-vertices pictures. A distance 3 layer in the red code in all three pictures. An exploded version of the slice in the qubits-on-faces picture showing the three independent layers.
@@ -31,19 +31,19 @@ Viewing models will be easiest if you have a mouse with a clickable scroll wheel
 
 This code is defined on a simple cubic lattice with qubits on faces, Z stabilisers on edges and X stabilisers on cells. An X error on a qubit violates the four Z stabilisers which form its perimeter, so the fact that syndromes for this error type form loops is immediately obvious in this picture. We are concerned only with Z stabilisers since our simulations only contain X errors. 
 
-![Figure 1](https://github.com/tRowans/JITdecoding/blob/master/documentation/red-code.png)
+![Figure 2](https://github.com/tRowans/JIT-supplementary-materials/blob/main/models/red-code.png)
 
 The left two figures show a single 2D code in the qubits-on-vertices and qubits-on-faces pictures. Z stabilisers are on hexagonal/half-hexagonal faces in the qubits-on-vertices picture. These are not stabiliser generators of the 3D code and so do not correspond to single edges in the qubits-on-faces picture. Two possible generating pairs/triples of these edges for each hexagon/half-hexagon are shown in red and blue in the middle figure. The figure on the right shows two adjacent layers (black and grey) which form a two-layer thick slice. The yellow highlighted edges correspond to the intermediate stabilisers between the two codes (which are stabiliser generators of the 3D code) and we can see that triples/pairs of these edges match the blue edge set in the black code and red edge set in the grey code. 
 
 ### Blue Code
 
-![Figure 2](https://github.com/tRowans/JITdecoding/blob/master/documentation/blue-code.jpg)
+![Figure 3](https://github.com/tRowans/JIT-supplementary-materials/blob/main/models/blue-code.jpg)
 
 This is an exploded image of a slice in the blue code with qubits on faces (this 3D lattice is the rhombic dodecahedral lattice). From right to left we have the lower, middle and upper layers. It is very clear in this picture why slices must be three layers thick rather than 2. Shown in red are the edges where the middle layer meets the other two. Once again the Z stabilisers of the 2D codes (top and bottom layers) in this picture are not generators of the 3D code and instead correspond to sets of four edges (three red ones from the lower/upper layer and one perpendicular edge in the middle layer).
 
 ### Green Code
 
-![Figure 3](https://github.com/tRowans/JITdecoding/blob/master/documentation/green-code.jpg)
+![Figure 4](https://github.com/tRowans/JIT-supplementary-materials/blob/main/models/green-code.jpg)
 
 An exploded image of a slice in the green code. Shown in black (blue) are the edges where the bottom (top) layers meet the middle layer. Unlike in the previous examples the Z stabilisers in the 2D codes corresponding to the top and bottom layers are weight-3 and are stabilisers of the 3D code (the grey edges). 
 

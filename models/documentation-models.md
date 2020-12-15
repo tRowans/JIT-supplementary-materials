@@ -27,7 +27,7 @@ Viewing models will be easiest if you have a mouse with a clickable scroll wheel
 
 ## Codes in the Qubits-On-Faces Picture
 
-### Red Code
+### Red Code (Code A)
 
 This code is defined on a simple cubic lattice with qubits on faces, Z stabilisers on edges and X stabilisers on cells. An X error on a qubit violates the four Z stabilisers which form its perimeter, so the fact that syndromes for this error type form loops is immediately obvious in this picture. We are concerned only with Z stabilisers since our simulations only contain X errors. 
 
@@ -35,13 +35,13 @@ This code is defined on a simple cubic lattice with qubits on faces, Z stabilise
 
 The left two figures show a single 2D code in the qubits-on-vertices and qubits-on-faces pictures. Z stabilisers are on hexagonal/half-hexagonal faces in the qubits-on-vertices picture. These are not stabiliser generators of the 3D code and so do not correspond to single edges in the qubits-on-faces picture. Two possible generating pairs/triples of these edges for each hexagon/half-hexagon are shown in red and blue in the middle figure. The figure on the right shows two adjacent layers (black and grey) which form a two-layer thick slice. The yellow highlighted edges correspond to the intermediate stabilisers between the two codes (which are stabiliser generators of the 3D code) and we can see that triples/pairs of these edges match the blue edge set in the black code and red edge set in the grey code. 
 
-### Blue Code
+### Blue Code (Code B)
 
 ![Figure 3](https://github.com/tRowans/JIT-supplementary-materials/blob/main/models/blue-code.jpg)
 
 This is an exploded image of a slice in the blue code with qubits on faces (this 3D lattice is the rhombic dodecahedral lattice). From right to left we have the lower, middle and upper layers. It is very clear in this picture why slices must be three layers thick rather than 2. Shown in red are the edges where the middle layer meets the other two. Once again the Z stabilisers of the 2D codes (top and bottom layers) in this picture are not generators of the 3D code and instead correspond to sets of four edges (three red ones from the lower/upper layer and one perpendicular edge in the middle layer).
 
-### Green Code
+### Green Code (Code C)
 
 ![Figure 4](https://github.com/tRowans/JIT-supplementary-materials/blob/main/models/green-code.jpg)
 
@@ -51,7 +51,7 @@ An exploded image of a slice in the green code. Shown in black (blue) are the ed
 
 NOTE: "Defects" here are what are referred to as "endpoints" in the main paper.
 
-For the delayed matching decoder to work we need the matching of defects to the top layer of a slice to result in an equivalent pair of defects in the next slice if this matching was incorrect and the defects should have been matched to each other. As described in the main paper, deferral of defects is a result of an erroneous correction to the top layer which creates a syndrome + the fact we assume all bottom layer Z stabilisers are in the +1 eigenstate. (in the qubits-on-vertices picture) This means we can only defer into cells at the bottom of the new slice which share a stabiliser with the old slice and cannot defer general defects from one slice into the corresponding position in the next slice. This is not a serious issue because we can simply defer all defects into these bottom cells, and while for some defects this will differ from their position in the previous slice they will also be deferred to bottom cells in all future slices so errors grow only by a constant amount due to this.
+For the delayed matching decoder to work we need the matching of defects to the top layer of a slice to result in an equivalent pair of defects in the next slice if this matching was incorrect and the defects should have been matched to each other. As described in the main text, this occurs as a result of an erroneous correction to the top layer which creates a syndrome in the next slice + the fact we assume all bottom layer Z stabilisers are in the +1 eigenstate. (in the qubits-on-vertices picture) This means we can only defer into cells at the bottom of the new slice which share a stabiliser with the old slice and cannot defer general defects from one slice into the corresponding position in the next slice. This is not a serious issue because we can simply defer all defects into these bottom cells, and while for some defects this will differ from their position in the previous slice they will also be deferred to bottom cells in all future slices so errors grow only by a constant amount due to this.
 
 ### Red Code
 

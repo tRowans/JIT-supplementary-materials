@@ -11,7 +11,7 @@ Extract the models.zip folder to get a models.blend file. To view the models you
 
 https://www.blender.org/
 
-Viewing models will be easiest if you have a mouse with a clickable scroll wheel/middle mouse button. This will let rotate the camera by using middle mouse + moving the mouse and pan the camera using shift + middle mouse + moving the mouse. Otherwise you can rotate by clicking and dragging on the axes in the top right corner and pan and zoom using the two icons below them.
+Viewing models will be easiest if you have a mouse with a clickable scroll wheel/middle mouse button. This will let you rotate the camera by using middle mouse + moving the mouse and pan the camera using shift + middle mouse + moving the mouse. Otherwise you can rotate by clicking and dragging on the axes in the top right corner and pan and zoom using the two icons below them.
 
 ## Map of Models File
 

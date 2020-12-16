@@ -7,7 +7,7 @@
 
 ## How To View Models
 
-Extract the models.zip folder to get a models.blend file. To view the models you will need blender, which can be downloaded for free here. 
+Extract models.zip to get a models.blend file. To view the models you will need blender, which can be downloaded for free here. 
 
 https://www.blender.org/
 
